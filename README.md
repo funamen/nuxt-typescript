@@ -18,3 +18,18 @@ $ yarn generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+## commitlintに関するMEMO
+```
+# build: ビルド周りの修正
+# chore: とりあえず！
+# ci: CIに関する設定の修正
+# docs: ドキュメントの修正
+# feat: 新機能
+# fix: バグ修正
+# pref: パフォーマンスの改善のための変更
+# refactor: リファクタリング
+# revert: コミットの取り消し!
+# style: css/sass等、スタイリング関わる変更
+# test: テストファイルの追加・変更や修正
+```
