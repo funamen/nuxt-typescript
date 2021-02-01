@@ -9,6 +9,8 @@ services:
     - "3000:3000"
     volumes:
     - "$PWD:/usr/src/app/"
+    - "node_modules:/usr/src/app/node_modules"
     command: "npx nuxt-ts"
 
-
+volumes:
+  node_modules:
