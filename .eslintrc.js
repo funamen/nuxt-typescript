@@ -3,11 +3,17 @@ module.exports = {
   env: {
     browser: true,
     node: true,
+    jest: true,
+  },
+  globals: {
+    page: true,
+    browser: true,
+    context: true,
+    jestPuppeteer: true,
   },
   extends: [
     "@nuxtjs/eslint-config-typescript",
     "prettier",
-    "prettier/vue",
     "plugin:prettier/recommended",
     "plugin:nuxt/recommended",
   ],
