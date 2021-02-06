@@ -29,7 +29,10 @@
       "@nuxt/content",
       "@types/node",
       "vuetify",
-      "jest"
+      "jest",
+      "puppeteer",
+      "jest-environment-puppeteer",
+      "expect-puppeteer"
     ]
   },
   "exclude": [
