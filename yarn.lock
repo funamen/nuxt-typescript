@@ -9615,10 +9615,10 @@ playwright-core@>=1.2.0:
     stack-utils "^2.0.3"
     ws "^7.3.1"
 
-playwright-firefox@^1.9.1:
-  version "1.9.1"
-  resolved "https://registry.yarnpkg.com/playwright-firefox/-/playwright-firefox-1.9.1.tgz#02fee05370fe0e893630bde93a9880eef764c2c8"
-  integrity sha512-ML1qHmibl4QZB1iub1SYTBmfAj2kZX7+WhAMwFYNhcumpLuo9gJ5rmuX0BOB0r2SVCrYj8NGLVL7ygJ7KgsJMg==
+playwright-firefox@^1.10.0:
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/playwright-firefox/-/playwright-firefox-1.10.0.tgz#842f6f93ebdced83eecbd23d6820cad930686728"
+  integrity sha512-TR7Vyw9PgS4KtbSOIUGqNa20gJxjpRHK6IQv4oDhgehpW/YnCjqxe5ylI9eLrzzYPUPsoyD7bZRxSZDtrcCTLA==
   dependencies:
     commander "^6.1.0"
     debug "^4.1.1"
