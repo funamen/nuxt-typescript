@@ -22,7 +22,12 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [
+    // plusins
+    "~/plugins/store-accessor.ts", // for vuex
+    { src: "~/plugins/persisted_state.js", ssr: false },
+    { src: "~/plugins/luxon.js", ssr: false },
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -33,6 +38,10 @@ export default {
     "@nuxt/typescript-build",
     // https://go.nuxtjs.dev/vuetify
     "@nuxtjs/vuetify",
+    // https://github.com/nuxt-community/google-fonts-module#readme
+    "@nuxtjs/google-fonts",
+    // https://composition-api.nuxtjs.org/getting-started/setup
+    "@nuxtjs/composition-api",
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -51,7 +60,7 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: "en",
+      lang: "ja",
     },
   },
 
@@ -62,8 +71,17 @@ export default {
   vuetify: {
     customVariables: ["~/assets/variables.scss"],
     theme: {
-      dark: true,
+      dark: false,
       themes: {
+        light: {
+          primary: colors.blue.darken2,
+          accent: colors.grey.darken3,
+          secondary: colors.amber.darken3,
+          info: colors.teal.lighten1,
+          warning: colors.amber.base,
+          error: colors.deepOrange.accent4,
+          success: colors.green.accent3,
+        },
         dark: {
           primary: colors.blue.darken2,
           accent: colors.grey.darken3,
@@ -74,6 +92,18 @@ export default {
           success: colors.green.accent3,
         },
       },
+    },
+  },
+
+  // Google Fonts
+  googleFonts: {
+    download: false,
+    families: {
+      Roboto: true,
+      "Josefin+Sans": true,
+      "Yusei+Magic": ["400"],
+      "Sawarabi+Mincho": ["400"],
+      "Sawarabi+Gothic": ["400"],
     },
   },
 

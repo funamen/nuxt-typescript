@@ -1,5 +1,14 @@
 # NuxtTemplate
 
+* Composition-APIを導入
+* Luxonを追加
+* NODENVを導入
+
+  
+```bash
+$ nodenv local 14.16.0
+```
+
 ## Build Setup
 
 ```bash
